@@ -1,0 +1,233 @@
+/*link.css for index.html 强波-14331229-hw3*/
+ 
+
+/*the body block*/
+html, body {
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+}
+
+#at-plus-container {
+  position: relative;
+  width:180px;
+  height:100%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#bottom-positioner {
+  position: absolute;
+  bottom:0px;
+  width:100%;
+}
+
+/*in the bar box, before it translate to a bigger box*/
+#info-bar {
+  position: absolute;
+  width:26px;
+  height:26px;
+  bottom:97px;
+  left:77px;   
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #7E7E7E;
+  -webkit-transition:  .5s ease-in-out;
+       -o-transition:  .5s ease-in-out;
+          transition:  .5s ease-in-out;
+  opacity: 0;
+}
+
+#button:hover #info-bar {
+  width:130px;
+  height:130px;
+  bottom:150px;
+  left:25px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #7E7E7E;
+  opacity: 1;
+}
+
+#info-bar ul {
+  margin:0px;
+  padding:0px;
+}
+
+#info-bar li {
+  list-style: none;
+  width:100%;
+  margin-top:5px;
+  margin-bottom:10px;
+  text-align:center;
+  margin-left:0px;
+  color:white;
+}
+
+#info-bar li img {
+  vertical-align: middle;
+}
+
+#info-bar li span {
+  margin-left:0px;
+}
+
+/*mine of the comment*/
+#info-bar li.mine {
+  display: inline-block;
+  width:50%;
+  color:#26E79E;
+  box-sizing: border-box;
+}
+
+/*posted and like of commentint the bar*/
+#info-bar li.posted {
+  padding-left:15px;
+}
+
+/*comment infomation in the bar*/
+#info-bar li.comment {
+  font-size: 30px;
+}
+
+/*another bar which has five  box*/
+#control-ring-container {
+  position: absolute;
+  width:180px;
+  height:180px;
+  bottom:20px;
+  left:0px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+#control-ring-container li {
+  position: absolute;
+  display:block;
+  width:32px;
+  height:32px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  list-style: none;
+  margin-top:60px;
+  margin-left:35px;
+  background: #686868 center no-repeat;
+  background-size: 18px 18px;
+  -webkit-transition:  .5s ease-in-out;
+       -o-transition:  .5s ease-in-out;
+          transition:  .5s ease-in-out;
+  opacity: 0;
+}
+
+/*stage of five small box before it translate to bigger one*/
+#button:hover #control-ring li:nth-child(1) {
+  margin-top:20px;
+  margin-left:-30px;
+  background-image: url("nomask.png");
+  opacity: 1;
+}
+
+#button:hover #control-ring li:nth-child(2) {
+  margin-top:60px;
+  margin-left:-40px;
+  background-image: url("history.png");
+  opacity: 1;
+}
+
+#button:hover #control-ring li:nth-child(3) {
+  margin-top:102px;
+  margin-left:-26px;
+  background-image: url("message.png");
+  opacity: 1;
+}
+
+#button:hover #control-ring li:nth-child(4) {
+  margin-top:129px;
+  margin-left:12px;
+  background-image: url("setting.png");
+  opacity: 1;
+}
+
+#button:hover #control-ring li:nth-child(5) {
+  margin-top:128px;
+  margin-left:60px;
+  background-image: url("signin.png");
+  opacity: 1;
+}
+
+/*the message unread*/
+#control-ring li span.unread {
+  position: absolute;
+  top:-2px;
+  right:-10px;
+  display: block;
+  width:20px;
+  height:20px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: red;
+  padding-top:-2px;
+  padding-left:5px;
+  color:#E0D6DC;
+  box-sizing: border-box;
+}
+
+/*the button of the box*/
+#button {
+  width:70px;
+  height:70px;
+  margin:75px 55px;
+}
+
+/*the at_plus begin*/
+#button .apb {
+  position: absolute;
+  width:26px;
+  height:26px;
+  bottom:97px;
+  left:77px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background:url("atplus_white.png") center no-repeat;
+  background-size: 20px 15px;
+  background-color: #989FCF;
+  -webkit-transition:  .5s ease-in-out;
+       -o-transition:  .5s ease-in-out;
+          transition:  .5s ease-in-out;
+}
+
+/*the translated at_plus */
+#button:hover .apb {
+  width:50px;
+  height:50px;
+  bottom:85px;
+  left:65px;
+  background:url("atplus_green.png") center no-repeat;
+  background-size: 40px 30px;
+  background-color: #303F9F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
